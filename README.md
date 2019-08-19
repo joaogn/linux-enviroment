@@ -34,6 +34,12 @@
   "editor.lineHeight": 24,
   "workbench.iconTheme": "vscode-icons",
   "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
   "editor.rulers": [80, 120],
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
@@ -47,7 +53,22 @@
     "typescript": "typescriptreact"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ]
 }
 ```
 
