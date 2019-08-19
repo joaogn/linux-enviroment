@@ -2,7 +2,16 @@
 
 ## Steps
 
-- Install vscode
+- Install git
+  - `sudo apt-get install git`
+- Configure git
+  - `git config --global user.name "Your name here"`
+  - `git config --global user.email "your_email@example.com"`
+  - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+  - `vi ~/.ssh/id_rsa.pub` (copy ssh Key)
+  - Add ssh key on github
+    - https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+- Install vscode (https://code.visualstudio.com/)
 - Install Dracula Theme vscode
 - Install Font FiraCode
   - https://github.com/tonsky/FiraCode
