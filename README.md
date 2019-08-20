@@ -11,7 +11,8 @@
   - `vi ~/.ssh/id_rsa.pub` (copy ssh Key)
   - Add ssh key on github
     - https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
-- Install vscode (https://code.visualstudio.com/)
+- Install vscode
+  - https://code.visualstudio.com/
 - Install Dracula Theme vscode
 - Install Font FiraCode
   - https://github.com/tonsky/FiraCode
@@ -146,4 +147,19 @@
     Categories=Development;
     EOL
     ```
-- Install DevDocs (https://devdocs.egoist.moe/)
+- Install DevDocs
+  - https://devdocs.egoist.moe/
+- Install NodeJs
+  - Install nvm
+    - https://github.com/nvm-sh/nvm
+    - Reload terminal
+  - `nvm install 10.15.3`
+  - `nvm alias default 10.15.3`
+- Install Yarn
+  - https://yarnpkg.com/pt-BR/docs/install#debian-stable
+- Install Docker
+  - https://docs.docker.com/install/linux/docker-ce/ubuntu/
+  - https://docs.docker.com/install/linux/linux-postinstall/
+- Install Postgres
+  - docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+  - https://electronjs.org/apps/postbird
