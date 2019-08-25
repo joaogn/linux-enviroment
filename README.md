@@ -193,5 +193,10 @@
   - https://github.com/joaogn/dokr/releases/tag/v0.0.2-beta-linux
   - Add dokr to Atartup Aplication '/opt/Dokr/dokr'
 - Install Postgres
-  - docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+  - `docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
   - https://electronjs.org/apps/postbird
+- Install MongoDB
+  - `docker run --name mongoDB -p 6379:6379 -d -t mongo`
+  - https://www.mongodb.com/download-center/compass
+- Install Redis
+  - `docker run --name redisname -p 6379:6379 -d -t redis:alpine`
