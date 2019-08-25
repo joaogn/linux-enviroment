@@ -126,6 +126,36 @@
       zplugin light zdharma/fast-syntax-highlighting
       ```
   - reload terminal
+- Configure Ubunto Interface
+
+  - `sudo add-apt-repository ppa:noobslab/themes`
+  - `sudo apt-get update`
+  - `sudo apt-get install arc-theme`
+  - Instal Gnome Tweaks and change theme to arc dark
+  - Change Wallpaper
+  - `sudo gedit /usr/share/gnome-shell/theme/gdm3.css`
+    ```css
+    #lockDialogGroup {
+      background: #484e59 url(resource:///org/gnome/shell/theme/noise-texture.png);
+      background-repeat: repeat;
+    }
+    ```
+  - `sudo -H gedit /usr/share/plymouth/themes/default.grub`
+    ```
+      if background_color 44,78,89,0; then
+        clear
+      fi
+    ```
+  - `sudo update-grub`
+  - `sudo nano /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script`
+
+    ```
+      Window.SetBackgroundTopColor (0.28, 0.31, 0.35);     # Nice colour on top of the screen fading to
+      Window.SetBackgroundBottomColor (0.28, 0.31, 0.35);  # an equally nice colour on the bottom
+    ```
+
+  - `sudo update-initramfs -u`
+
 - Install Chrome Extensions
   - React Developer Tools
   - Dracula DevTools Theme
@@ -160,6 +190,8 @@
 - Install Docker
   - https://docs.docker.com/install/linux/docker-ce/ubuntu/
   - https://docs.docker.com/install/linux/linux-postinstall/
+  - https://github.com/joaogn/dokr/releases/tag/v0.0.2-beta-linux
+  - Add dokr to Atartup Aplication '/opt/Dokr/dokr'
 - Install Postgres
   - docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
   - https://electronjs.org/apps/postbird
