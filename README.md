@@ -195,6 +195,20 @@
 - Install Postgres
   - `docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
   - https://electronjs.org/apps/postbird
+  - If postbird has no shortcut
+    - copy postbird.png to /opt/postbird/resources/
+    - ```
+        cat > ~/.local/share/applications/postbird.desktop <<EOL
+        [Desktop Entry]
+        Encoding=UTF-8
+        Name=Postbird
+        Exec=postbird
+        Icon=/opt/postbird/resources/postbird.png
+        Terminal=false
+        Type=Application
+        Categories=Development;
+        EOL
+      ```
 - Install MongoDB
   - `docker run --name mongoDB -p 6379:6379 -d -t mongo`
   - https://www.mongodb.com/download-center/compass
